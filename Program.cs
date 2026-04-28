@@ -1,9 +1,9 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Add MVC services
 builder.Services.AddControllersWithViews();
 
-// Enable Session (IMPORTANT for login/logout)
+// Enable Session (for login/logout)
 builder.Services.AddSession(options =>
 {
     options.IdleTimeout = TimeSpan.FromMinutes(30);
@@ -13,7 +13,7 @@ builder.Services.AddSession(options =>
 
 var app = builder.Build();
 
-// Configure HTTP request pipeline
+// Error handling (production safe)
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -30,7 +30,7 @@ app.UseSession();
 
 app.UseAuthorization();
 
-// Default route (starts at Login page)
+// Default route → Login page first
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Account}/{action=Login}/{id?}");
