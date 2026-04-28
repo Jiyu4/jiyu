@@ -1,0 +1,33 @@
+<h2>Currency Converter</h2>
+
+<form method="post" action="/Home/Convert">
+
+    <label>From:</label>
+    <input name="fromCurrency" placeholder="USD / PHP / EUR" required />
+
+    <br><br>
+
+    <label>To:</label>
+    <input name="toCurrency" placeholder="USD / PHP / EUR" required />
+
+    <br><br>
+
+    <label>Amount:</label>
+    <input name="amount" type="number" step="any" required />
+
+    <br><br>
+
+    <button type="submit">Convert</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <h3>Result:</h3>
+    <p>
+        @ViewBag.Amount @ViewBag.From = 
+        <b>@ViewBag.Result @ViewBag.To</b>
+    </p>
+}
+
+<br>
+<a href="/Account/Logout">Logout</a>

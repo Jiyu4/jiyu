@@ -1,0 +1,8 @@
+C:\Users\Jiyu\CurrencySystem\publish\CurrencySystem.exe
+C:\Users\Jiyu\CurrencySystem\publish\appsettings.Development.json
+C:\Users\Jiyu\CurrencySystem\publish\appsettings.json
+C:\Users\Jiyu\CurrencySystem\publish\CurrencySystem.dll
+C:\Users\Jiyu\CurrencySystem\publish\CurrencySystem.deps.json
+C:\Users\Jiyu\CurrencySystem\publish\CurrencySystem.runtimeconfig.json
+C:\Users\Jiyu\CurrencySystem\publish\CurrencySystem.pdb
+C:\Users\Jiyu\CurrencySystem\publish\Newtonsoft.Json.dll
